@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en_US">
+    <head> 
+        <meta charset="UTF-8">
+        <title>Anthony Mutuma Kathare | Backend Engineer</title>
+        <style>
+           :root {
+  --bg-color: #f8f9fa;
+  --text-color: #333;
+  --nav-bg: #0a192f;
+  --accent: #64ffda;
+  --card-bg: #fff;
+}
+
+/* Dark theme variables */
+.dark-mode {
+  --bg-color: #0a192f;
+  --text-color: #f8f9fa;
+  --nav-bg: #111827;
+  --accent: #64ffda;
+  --card-bg: #1f2937;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", sans-serif;
+}
+
+body {
+  background: var(--bg-color);
+  color: var(--text-color);
+  line-height: 1.6;
+  transition: background 0.3s, color 0.3s;
+}
+
+/* Navbar */
+nav {
+  background: var(--nav-bg);
+  padding: 1rem;
+}
+nav .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+nav .logo {
+  color: #fff;
+}
+nav .nav-links {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+}
+nav .nav-links a {
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+nav .nav-links a:hover {
+  color: var(--accent);
+}
+.toggle-btn {
+  background: none;
+  border: none;
+  color: #fff;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+
+/* Hero */
+header {
+  padding: 3rem 1rem;
+  background: var(--card-bg);
+  transition: 0.3s;
+}
+.hero {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+.profile-pic {
+  width: 150px;
+  border-radius: 50%;
+  border: 3px solid var(--nav-bg);
+}
+.hero-text h1 {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+}
+.social-links a {
+  margin-right: 1rem;
+  font-size: 1.5rem;
+  color: var(--nav-bg);
+  transition: color 0.3s;
+}
+.dark-mode .social-links a {
+  color: var(--accent);
+}
+.social-links a:hover {
+  color: var(--accent);
+}
+
+/* Sections */
+.section {
+  padding: 3rem 1rem;
+}
+.section h2 {
+  margin-bottom: 1rem;
+  color: var(--nav-bg);
+}
+.dark-mode .section h2 {
+  color: var(--accent);
+}
+.skills-grid div {
+  background: var(--card-bg);
+  border: 1px solid #ddd;
+  padding: 0.8rem;
+  margin: 0.5rem 0;
+  border-radius: 5px;
+  transition: 0.3s;
+}
+.experience-item {
+  margin-bottom: 2rem;
+}
+.experience-item ul {
+  list-style-type: disc;
+  margin-left: 1.5rem;
+}
+.contact p {
+  margin-bottom: 0.5rem;
+}
+.project li{
+    margin-left: 0.5rem;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 1rem;
+  background: var(--nav-bg);
+  color: #fff;
+}
+
+        </style>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    </head>
+    <body>
+        <!-- Navbar -->
+  <nav>
+    <div class="container">
+      <h2 class="logo">ANTHONY MUTUMA KATHARE</h2>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+       <!-- Dark Mode Toggle Button -->
+       <button id="darkModeToggle" class="toggle-btn">
+        🌙
+      </button>
+    </div>
+  </nav>
+
+   <!-- Hero Section -->
+   <header>
+    <div class="container hero">
+      <img src="C:/Users/Anthony Mutuma Katha/Downloads/Anthony_Passport_Photo 1.jpg" alt="Anthony Mutuma Kathare" class="profile-pic">
+      <div class="hero-text">
+        <h1>Backend Software Engineer | Fintech Specialist</h1>
+        <p>Building innovative and reliable software solutions in the fintech industry with a focus on scalability, performance, and user experience.</p>
+        <div class="social-links">
+          <a href="https://www.linkedin.com/in/anthony-kathare-28b0671ba/" target="_blank"><i class="fab fa-linkedin"></i></a>
+          <a href="https://github.com/anthonymutuma" target="_blank"><i class="fab fa-github"></i></a>
+          <a href="mailto:anthonymutuma3@gmail.com"><i class="fas fa-envelope"></i></a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- About -->
+  <section id="about" class="section">
+    <div class="container">
+      <h2>About Me</h2>
+      <p>Backend Software Engineer with over 2.5 years of experience in the fintech industry, specializing in creating innovative and reliable software solutions to solve complex business problems and enhance productivity. Skilled in Spring Boot, Hibernate, and cloud technologies, with a proven ability to lead projects and deliver results.</p>
+    </div>
+  </section>
+
+  <!-- Skills -->
+  <section id="skills" class="section">
+    <div class="container">
+      <h2>Skills</h2>
+      <div class="skills-grid">
+        <div><strong>Languages:</strong> Java, C#, Angular</div>
+        <div><strong>Frameworks:</strong> Spring Boot, Hibernate</div>
+        <div><strong>Databases:</strong> MySQL, Oracle, MSSQL, PostgreSQL</div>
+        <div><strong>Cloud:</strong> AWS, Azure, Kubernetes</div>
+        <div><strong>Messaging/Event Streaming:</strong> Kafka, ActiveMQ, RabbitMQ</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Experience -->
+  <section id="experience" class="section">
+    <div class="container">
+      <h2>Experience</h2>
+      <div class="experience-item">
+        <h3>Software Engineer | Modefin</h3>
+        <p><em>Aug 2021 – Present</em></p>
+        <ul>
+          <li>Integrated DSTV payment service into Bank of Africa Uganda’s mobile banking platform.</li>
+          <li>Developed statement services for Bank of Khartoum.</li>
+          <li>Enhanced mobile banking services for BOK UAE.</li>
+          <li>Supported retail internet banking for BOK Sudan.</li>
+        </ul>
+      </div>
+      <div class="experience-item">
+        <h3>Software Developer | Softech Innovation Africa</h3>
+        <p><em>Mar 2021 – Jun 2021</em></p>
+        <ul>
+          <li>Built ERP solutions with Microsoft Dynamics NAV.</li>
+          <li>Managed SQL databases and validated application functionality.</li>
+        </ul>
+      </div>
+      <div class="experience-item">
+        <h3>Service Support Attache | Kenya Revenue Authority</h3>
+        <p><em>Jan 2020 – Apr 2020</em></p>
+        <ul>
+          <li>Troubleshot technical issues, maintained computer systems and networks.</li>
+          <li>Provided user training and deployed system updates.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects -->
+  <section id="projects" class="section project">
+    <div class="container">
+      <h2>Projects</h2>
+      <ul>
+        <li>Bank of Khartoum Mobile & Internet Banking (Spring Boot, Docker, Oracle)</li>
+        <li>BOA Uganda Support (Java, Oracle)</li>
+        <li>ZANACO Mobile Banking Upgrade (JavaEE, MSSQL)</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="section contact">
+    <div class="container">
+      <h2>Contact</h2>
+      <p>Email: <a href="mailto:anthonymutuma3@gmail.com">anthonymutuma3@gmail.com</a></p>
+      <p>Phone: <a href="tel:+254718252013">+254 718 252 013</a></p>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2025 Anthony Mutuma Kathare. All rights reserved.</p>
+  </footer>
+  <script src="D:/OneDrive - modefin.com/Documents/script.js"></script>
+    </body>
+</html>
