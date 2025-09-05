@@ -1,13 +1,5 @@
 const toggleBtn = document.getElementById("darkModeToggle");
 const body = document.body;
-const hamburger = document.getElementById("hamburger");
-const navLinks = document.getElementById("navLinks");
-
-// Toggle menu on click
-hamburger.addEventListener("click", () => {
-  navLinks.classList.toggle("active");
-});
-
 
 // Load saved mode
 if (localStorage.getItem("theme") === "dark") {
