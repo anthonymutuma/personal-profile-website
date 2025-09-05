@@ -145,9 +145,17 @@ header {
 
 /* Responsive styles */
 @media (max-width: 768px) {
-  nav .container {
-    flex-wrap: wrap;
-  }
+ nav .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.right-actions {
+  display: flex;
+  align-items: center;
+  gap: 1rem; /* ✅ spacing between hamburger & toggle */
+}
 
   .hamburger {
     display: block;
@@ -192,6 +200,7 @@ footer {
   <nav>
     <div class="container">
       <h2 class="logo">ANTHONY MUTUMA KATHARE</h2>
+      <div class="right-actions"></div>
       <!-- Hamburger Menu -->
     <div class="hamburger" id="hamburger">
       ☰
