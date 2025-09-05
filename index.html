@@ -135,6 +135,46 @@ header {
     margin-left: 0.5rem;
 }
 
+/* Hamburger hidden on desktop */
+.hamburger {
+  display: none;
+  font-size: 1.8rem;
+  color: #fff;
+  cursor: pointer;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  nav .container {
+    flex-wrap: wrap;
+  }
+
+  .hamburger {
+    display: block;
+  }
+
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    background: var(--nav-bg);
+    margin-top: 1rem;
+    padding: 1rem;
+  }
+
+  .nav-links.active {
+    display: flex;
+  }
+
+  .nav-links li {
+    margin: 0.5rem 0;
+  }
+
+  .toggle-btn {
+    margin-left: auto;
+  }
+}
+
 /* Footer */
 footer {
   text-align: center;
@@ -152,7 +192,11 @@ footer {
   <nav>
     <div class="container">
       <h2 class="logo">ANTHONY MUTUMA KATHARE</h2>
-      <ul class="nav-links">
+      <!-- Hamburger Menu -->
+    <div class="hamburger" id="hamburger">
+      ☰
+    </div>
+      <ul class="nav-links" id="navLinks">
         <li><a href="#about">About</a></li>
         <li><a href="#skills">Skills</a></li>
         <li><a href="#experience">Experience</a></li>
